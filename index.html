@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Dayli Task</title>
+</head>
+
+<body id="BG">
+  <div class="card-main">
+    <form id="myForm">
+      <h5 class="card-title">My Notes</h5>
+      <textarea placeholder="Enter your Notes text here " autofocus id="inputText" class="main-text-area"
+        required></textarea>
+      <div class="card-footer">
+        <div class="date-sector">
+          <h3 class="choose-date-title">Choose Date</h3>
+          <input type="date" id="inputDate" required>
+        </div>
+        <div class="time-sector">
+          <h3 class="choose-time-title">Choose Time</h3>
+          <input type="time" id="inputTime">
+        </div>
+        <button type="button" onclick="Add()" class="form-button btn btn-success">Add Note</button>
+        <button type="button" onclick="clearForm()" class="form-button btn btn-danger">Clean Form</button>
+
+      </div>
+    </form>
+  </div>
+  <div id="boardPlaceHolder"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>

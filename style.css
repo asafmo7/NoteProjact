@@ -1,0 +1,113 @@
+body
+{
+    background-color: #f6d7b0;
+}
+
+.card-main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+ 
+
+#myForm{
+    width: 500px;
+    align-self: center;
+}
+.card-title
+{
+    background: antiquewhite;
+    width: fit-content;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-large;
+    font-weight: bold;
+}
+.main-text-area {
+    line-height: 26px;
+    padding: 22px;
+    font-size: medium;
+    width: 100%;
+    height: 200px;
+    resize:none;
+    overflow: auto;
+    border: none;
+   
+}
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-button{
+    height: 3em;
+    margin-top: auto;
+}
+.btn-success{
+    margin-right: 10px
+}
+
+
+.date-sector , .time-sector {
+    font-size: small;
+}
+.choose-date-title,.choose-time-title{
+    font-size: medium;
+    font-weight: bold;
+    background: antiquewhite;
+    width: fit-content;
+}
+
+#boardPlaceHolder
+{
+    transition: all .5s;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap;
+    transition : all 1s;
+}
+
+.note
+{
+    transition: opacity 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #000000;
+    background:#fff7b2;
+    height: 180px;
+    width: 200px;
+    padding: 1em;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 15px;
+    margin: 1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    
+    border-bottom-right-radius: 70px 10px;
+    z-index: 100;
+}
+.delete-note{
+    animation: fadeout 1s;
+}
+.close-button {
+    transition : opacity 0.5s;
+    opacity : 0;
+    margin-left:auto;
+}
+.note:hover .close-button{
+    opacity:1;
+    cursor: pointer;
+}
+.text-in-note
+{
+    overflow-y: auto;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin:0;
+}
